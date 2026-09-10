@@ -1,18 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سایت من</title>
+    <title>MySite</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+        }
+
+        nav {
+            background: #1c1c1c;
+            padding: 18px 10px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 16px;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #bbb;
+            max-width: 600px;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 30px;
+            background: #008cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 17px;
+        }
+
+        .btn:hover {
+            background: #006dcc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+    </style>
 </head>
+
 <body>
 
-    <h1>سلام 👋</h1>
-    <p>این اولین سایت من است که با Termux ساختم!</p>
+    <nav>
+        <a href="#">خانه</a>
+        <a href="#">درباره ما</a>
+        <a href="#">خدمات</a>
+        <a href="#">تماس با ما</a>
+    </nav>
 
-    <button onclick="alert('سلام! 😎')">
-        کلیک کن
-    </button>
+    <section class="hero">
+        <h1>به MySite خوش آمدید 👋</h1>
+
+        <p>
+            این اولین سایت من است که با Termux ساخته شده.
+            به زودی امکانات بیشتری به آن اضافه می‌کنیم!
+        </p>
+
+        <a class="btn" href="#">شروع کنید 🚀</a>
+    </section>
+
+    <footer>
+        ساخته شده با ❤️ و Termux
+    </footer>
 
 </body>
 </html>
